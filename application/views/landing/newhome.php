@@ -15,13 +15,10 @@
         <header>
             <a href="#"><img class="logo" src="assets\img\logo.png"></a>
             <ul>
-                <li><a href="<?php echo base_url();?>User">Home</a></li>
+                <li><a href="<?php echo base_url();?>">Home</a></li>
                 <li><a href="#">Katalog</a></li>
-                <li><a href="#">Manfaat</a></li>
-                <li><a href="#">Keranjang</a></li>
-                <li><a href="#">Pemesanan</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="<?php echo base_url('Auth/logout')?>">Logout</a></li>
+                <li><a href="<?php echo base_url('Auth/index')?>">Login</a></li>
             </ul>
         </header>
         <div class="content">

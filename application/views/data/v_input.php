@@ -9,17 +9,25 @@
 
 </head>
 <body>
-		<table style="margin:20px auto;" >
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-md-6">
+
+            <div class="card">
+                <div class="card-header">
+                    Form Tambah Data Produk
+                </div>
+                <div class="card-body">
 			<form class="row g-3" action="<?php echo base_url(). 'index.php/Admin/inputProduk_aksi'; ?>" method="post">
-				<div class="col-md-3">
+				<div class="form-group">
 					<label class="form-label">ID_Produk</label>
 					<input class="form-control" name="ID_Produk">
 				</div>
-				<div class="col-md-3">
+				<div class="form-group">
 					<label class="form-label">Nama_Produk</label>
 					<input class="form-control" name="Nama_Produk">
 				</div>
-				<div class="col-md-3">
+				<div class="form-group">
 					<label>Jenis_Skincare</label></br>
 					<?php 
 					$datajenis = $this->db->get('Jenis_Skincare');
@@ -32,7 +40,7 @@
 					echo form_dropdown('Jenis_Skincare',$options,$jenis);
 					?>
 				</div>
-				<div class="col-md-3">
+				<div class="form-group">
 					<label>Brand</label></br>
 					<?php 
 					$databrand = $this->db->get('Brand');
@@ -45,22 +53,27 @@
 					echo form_dropdown('Brand',$options,$brand);
 					?>
 				</div>
-				<div class="col-md-3">
+				<div class="form-group">
 					<label class="form-label">Manfaat</label>
 					<input class="form-control" name="Manfaat">
 				</div>
-				<div class="col-md-3">
+				<div class="form-group">
 					<label class="form-label">Ingredients</label>
 					<input class="form-control" name="Ingredients">
 				</div>
-				<div class="col-md-3">
+				<div class="form-group">
 					<label class="form-label">Harga</label>
 					<input class="form-control" name="Harga">
 				</div>
-				<div class="col-12">
+				<div class="form-group">
 					<button type="submit" class="btn btn-primary">Input</button>
 				</div>
 			</form>
-		</table>
+		</div>
+            </div>
+
+        </div>
+    </div>
+</div>
 </body>
 </html>

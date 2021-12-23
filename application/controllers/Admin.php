@@ -8,9 +8,9 @@ class Admin extends CI_Controller {
 		parent::__construct();		
 		$this->load->model('MAdmin');
         $this->load->helper('url');
-		if($this->session->userdata('Status') != "Login"){
-			redirect(base_url("index.php/LandingPage/loginAdmin"));
-		}
+		/*if($this->session->userdata('Status') != "Login"){
+			redirect(base_url("Auth/index"));
+		}*/
 	}
 
     public function index(){
