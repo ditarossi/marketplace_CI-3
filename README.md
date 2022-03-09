@@ -4,3 +4,4 @@
 4. Sistem Logout
 5. Tampilan Home User
 6. Tampilan Dashboard, dan CRUD e-commerce
+7. Untuk proses transaksional belum
